@@ -5,9 +5,16 @@
         <title>Azits</title>
         <link href="./Css/style.css" rel="stylesheet">
         <script>
-             function gestionSurvole(afficher) {
-            var hiden = document.getElementById('imageProjet');
-            hiden.style.opacity = afficher ? '1' : '0';
+            function gestionSurvole(afficher, i) {
+                if (i=='1'){
+                    var hiden = document.getElementById('projet1');
+                    hiden.style.opacity = afficher ? '1' : '0';
+                }
+                else{
+                    var hiden = document.getElementById('projet2');
+                    hiden.style.opacity = afficher ? '1' : '0';
+                }
+            
             }
         </script>
     </head>
@@ -23,17 +30,22 @@
     
     <main id="Projet">
         <aside id="imageProjet">
-           <p id="hiden"> e m'affiche au survol</p>
+           <div id="projet1" class="imgP">
+                <p> Première image</p>
+           </div>
+           <div id="projet2" class="imgP">
+            <p> deuxième image</p>
+       </div>
         </aside>
 
         <section id="choix" >
             <h1>Projet</h1>
             <ul>
-                <li><span class="projet" onmouseover="gestionSurvole(true)" onmouseout="gestionSurvole(false)">Portfolio</span> <span class="categorie">Developpement Web</span></li>
-                <li><span class="projet">Portfolio</span> <span class="categorie">Developpement Web</span></li>
-                <li><span class="projet">Portfolio</span> <span class="categorie">Developpement Web</span></li>
-                <li><span class="projet">Portfolio</span> <span class="categorie">Developpement Web</span></li>
-                <li><span class="projet">Portfolio</span> <span class="categorie">Developpement Web</span></li>
+                <li><span class="projet translationDroite" onmouseover="gestionSurvole(true,'1')" onmouseout="gestionSurvole(false,'1')">Portfolio</span> <span class="categorie">Developpement Web</span></li>
+                <li><span class="projet translationDroite" onmouseover="gestionSurvole(true,'2')" onmouseout="gestionSurvole(false,'2')">Portfolio</span> <span class="categorie">Developpement Web</span></li>
+                <li><span class="projet translationDroite" >Portfolio</span> <span class="categorie">Developpement Web</span></li>
+                <li><span class="projet translationDroite" >Portfolio</span> <span class="categorie">Developpement Web</span></li>
+                <li><span class="projet translationDroite">Portfolio</span> <span class="categorie">Developpement Web</span></li>
                 
             </ul>
 

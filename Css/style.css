@@ -6,6 +6,7 @@ body{
     font-family: Helvetica,Arial,sans-serif;
     margin: 0;
     padding: 0;
+    
 }
 .centrer{
     display: flex;
@@ -72,6 +73,17 @@ header ul a:active{
     to {
         transform: translateY(0);
         opacity: 1;
+    }
+}
+@keyframes apparitionfleche {
+    from {
+        transform: translateY(-3px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+        
     }
 }
 
@@ -178,6 +190,7 @@ footer img{
     font-weight: 400;
     font-size: 40px;
     color:#1D1D1F;
+    
 }
 
 #APropos p{
@@ -214,20 +227,39 @@ aside img{
    flex-direction: row;
     width:100%;
     height: 100%;
-    justify-content: space-evenly;
-    margin-top: 8%;
+    margin-top: 10%;
     
    
 }
 #imageProjet{
-    border-top-right-radius: 50px;
-    display: flex;
-    text-align: center;
-    width: 30%;
-    opacity: 0;
-    transition: opacity 10s ease;
-   /* border: 3px black solid;*/
+    
+    width: 50%;
+    z-index: 20;
+
 }
+.imgP{
+    position: absolute;
+    border-top-right-radius: 50px;
+    width:47%;
+    height: 79%;
+    
+    
+    
+}
+#projet1{
+    background-color: #0066cc;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+    
+}
+#projet2{
+    background-color: red;
+    opacity: 0;
+    transition: opacity 1.5s ease;
+   
+}
+
+
 #choix{
     right: 0;
     top: 0;
@@ -238,11 +270,46 @@ aside img{
     font-weight: 750;
     font-size: 40px;
     color:#1D1D1F;
+    animation: apparitionDeHautEnBas 1s ease-in-out;
 }
 #Projet ul{
     list-style: none;
     padding: 0;
 }
+#Projet li{
+    padding-left:0;
+
+}
+#Projet li:nth-child(1){
+    animation: apparitionDeHautEnBas 1.5s ease-in-out;
+}
+#Projet li:nth-child(2){
+    animation: apparitionDeHautEnBas    1.4s ease-in-out;
+   
+}
+#Projet li:nth-child(3){
+    animation: apparitionDeHautEnBas 1.3s ease-in-out;
+    
+}
+#Projet li:nth-child(4){
+    animation: apparitionDeHautEnBas 1.2s ease-in-out;
+   
+}
+
+#Projet li:nth-child(5){
+    animation: apparitionDeHautEnBas 1.1s ease-in-out;
+   
+}
+
+.translationDroite{
+    transition: padding-bottom 0.5s ease-in-out;
+
+}
+.translationDroite:hover{
+    padding-bottom: 10px; 
+    cursor: pointer;
+}
+
 #Projet li{
     height: 45px;
     margin-bottom: 5px;
@@ -254,12 +321,14 @@ aside img{
     font-size: 24px;
     color:#1D1D1F;
 }
+
 .projet{
     font-weight:550;
 }
 .categorie{
     font-size: 20px;
 }
+
 
 
 
