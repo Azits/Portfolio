@@ -1,11 +1,16 @@
-
-
+:root{
+    --couleur_pricipale_blanc:#F9F4F2;
+    --couleur_pricipale_bleu:#2f1664;
+    --couleur_texte:#2F1664;
+}
 body{
     
-    background-color: #EDECF3;
+    background-color: var(--couleur_pricipale_blanc);
     font-family: Helvetica,Arial,sans-serif;
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100vh;
     
 }
 .centrer{
@@ -19,20 +24,15 @@ header{
     top: 0;
     left: 0;
     z-index: 100;
-    padding-left: 30px;
-    padding-right: 30px;
-    border: 3px black solid;
     flex-direction: row;
-   
-    background-color: #282829;
-    color: #D9D9D9;
+    background-color: var(--couleur_pricipale_blanc);
+    border-bottom: 3px solid #e8e8e8 ;
+    color: var(--couleur_texte);
     
     
 }
 header h1{
-    
     margin-right: 50%;
-    
 }
 header ul{
     
@@ -45,26 +45,21 @@ header ul{
     font-size: 20px;
 }
 
-header ul a{
-    color: #D9D9D9;
+a{
+    color: var(--couleur_texte);
 }
-header ul a:hover{
+a:hover{
     text-decoration: underline;
 }
-header ul a:active{
-    color: #D9D9D9;
+a:active{
+    color: var(--couleur_texte);
 }
 
-#Accueil{
-    
+main{
     width: 100%;
-    height: 20em;
-   
-    
+    height: 100vh;
 }
-#Accueil{
-    margin-top: 15%;
-}
+
 @keyframes apparitionDeHautEnBas {
     from {
         transform: translateY(-100%);
@@ -90,8 +85,9 @@ header ul a:active{
 #presentation {
     animation: apparitionDeHautEnBas 1.5s ease-in-out;
 }
-main #presentation{
+main section{
     flex-direction: column;
+    height: 100vh;
 }
 main #presentation p{
     text-align: center;
@@ -101,16 +97,16 @@ main #presentation p{
     font-size:normal;
     font-weight: 600;
     margin-bottom: 0;
-    color:#1D1D1F ;
+    color:var(--couleur_texte) ;
     
 }
 #p2{
     font-size: 20px;
-    color: #1D1D1F;
+    color: black;
 }
 #lienPresentation{
     width: 360px;
-    color: #0066cc;
+    color:var(--couleur_texte);
     font-size: 21px;
     font-weight: 400;
     display: flex;
@@ -120,16 +116,21 @@ main #presentation p{
 a{
     text-decoration: none;
     display: flex;
+    color: var();
+}
+
+#Projets{
+    background-color: var(--couleur_pricipale_bleu);
 }
 
 #lienPresentation a:hover,#surmoi a:hover{
     text-decoration: underline;
 }
 #lienPresentation a:visited,#surmoi a:visited{
-    color: #0066cc;
+    color: var(--couleur_texte);
 }
 #lienPresentation a:active, #surmoi a:active{
-    color: #0066cc;
+    color: var(--couleur_texte);
 }
 
 @keyframes apparition {
@@ -142,15 +143,11 @@ a{
   }
 .fondu{
     opacity: 0;
-    animation: apparition 4s ease forwards;
+    /*animation: apparition 4s ease forwards;*/
 }
 
 footer{
     width: 100%;
-    height: 10%;
-    position: absolute;
-    bottom:0;
-    left: 0;
     background-color: #EDECF3;
     color: #D9D9D9;
    
@@ -171,7 +168,6 @@ footer img{
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////En savoir plus ///////////////////////////////////////////////////////////////////////////*/
 
 #enSavoirPlus{
-    margin-top: 11%;
     display: flex;
 }
 #APropos, #enSavoirPlus aside{
@@ -179,41 +175,44 @@ footer img{
 }
 #APropos{
     
-    width: 55%;
-    margin-left: 14%;
+    width: 60%;
     text-align:justify;
-    margin-right: 5%;
-}
-
-#APropos h1{
-    border-bottom: 3px black solid;
-    font-weight: 400;
-    font-size: 40px;
-    color:#1D1D1F;
     
 }
 
-#APropos p{
+#surmoi h1{
+    border-bottom: 3px solid var(--couleur_pricipale_bleu);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 40px;
+    color:var(--couleur_texte);
+    
+}
+
+#surmoi p{
+    font-weight: 400;
+    font-size: 15px;
     line-height:1.4 ;
     color: #1D1D1F;
 
     
+}
+#surmoi{
+    width: 75%;
 }
 #surmoi a{
     font-weight: 400;
     font-size: 20px;
 }
 #enSavoirPlus aside{
-    position: absolute;
+    padding-top:9% ;
     right: 0;
-    top: 80px;
-    text-align: end;
+    top: 85px;
+    width: 40%;
 }
 aside img{
     border-bottom-left-radius: 30px;
-    width: 39%;
+    width: 100%;
+    height: 100%;
     border-left: 10px solid transparent;
     border-image: linear-gradient(to right, #F5F5F7, #1D1D1F); 
     border-image-slice: 20;
