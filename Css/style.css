@@ -2,7 +2,11 @@
     --couleur_pricipale_blanc:#F9F4F2;
     --couleur_pricipale_bleu:#2f1664;
     --couleur_texte:#2F1664;
+    --coleur_carte_survole:#6942BB;
 }
+html {
+    scroll-behavior: smooth;
+  }
 body{
     
     background-color: var(--couleur_pricipale_blanc);
@@ -24,24 +28,24 @@ header{
     top: 0;
     left: 0;
     z-index: 100;
-    flex-direction: row;
     background-color: var(--couleur_pricipale_blanc);
     border-bottom: 3px solid #e8e8e8 ;
     color: var(--couleur_texte);
-    
-    
 }
-header h1{
-    margin-right: 50%;
+nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
 }
+
 header ul{
-    
+    padding: 0;
+    width: 30%;
     list-style: none;
     display: flex;
+    justify-content: space-between;
     flex-direction: row;
-    justify-content:space-between;
-    width: 70%;
-    margin-right: 80px;
+    gap: 3;
     font-size: 20px;
 }
 
@@ -57,7 +61,6 @@ a:active{
 
 main{
     width: 100%;
-    height: 100vh;
 }
 
 @keyframes apparitionDeHautEnBas {
@@ -85,7 +88,7 @@ main{
 #presentation {
     animation: apparitionDeHautEnBas 1.5s ease-in-out;
 }
-main section{
+main #presentation{
     flex-direction: column;
     height: 100vh;
 }
@@ -111,18 +114,89 @@ main #presentation p{
     font-weight: 400;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
 }
 a{
     text-decoration: none;
     display: flex;
     color: var();
 }
+main #Projets{
+    width: 100%;
+
+}
 
 #Projets{
     background-color: var(--couleur_pricipale_bleu);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    height: 80vh;
+}
+#Projets h1{
+    color: var(--couleur_pricipale_blanc);
+    margin-bottom:70px;
+    width: 100%;
+    text-align: center;
+}
+#carts{
+    height: 80%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+#carte{
+    width: 240px;
+    height: 350px;
+    background-color: var(--couleur_pricipale_blanc);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 5px;
+    border-radius: 15px;
+}
+#carte #bar{
+    width: 80%;
+    display: flex;
+    gap: 8px;
+}
+#carte #image {
+    margin-top: 5px;
+    width: 80%;
+    height: 90px;
+    border: 1px solid var(--couleur_pricipale_bleu);
+}
+#carte #information{
+    width: 80%;
+    height: 110px;
+    border: 1px solid var(--couleur_pricipale_bleu);
 }
 
+#Connaissance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 20px;
+    height: 80vh;
+}
+#Connaissance #carte{
+    background-color: var(--coleur_carte_survole);
+}
+#Connaissance #carte #image {
+    border: 1px solid var(--couleur_pricipale_blanc);
+}
+#Connaissance #carte #information{
+    border: 1px solid var(--couleur_pricipale_blanc);
+}
+#Connaissance h1{
+    color: var(--couleur_texte);
+    margin-bottom:70px;
+    width: 100%;
+    text-align: center;
+}
 #lienPresentation a:hover,#surmoi a:hover{
     text-decoration: underline;
 }
@@ -141,29 +215,70 @@ a{
       opacity: 1;
     }
   }
-.fondu{
-    opacity: 0;
-    /*animation: apparition 4s ease forwards;*/
+#i{
+    margin-top: 5%;
+    margin-left: 10px;
+    color: var(--couleur_texte);
 }
-
 footer{
     width: 100%;
+    height: 75vh;
+    padding-top: 100px;
     background-color: #EDECF3;
-    color: #D9D9D9;
-   
-   
-
+    color: var(--couleur_texte); 
+    justify-content: center;
 }
-footer section{
-    margin-left: 80%;
-   
-   
+footer h2{
+    text-align: center;
+}
+footer #contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer form{
+    width: 30%;
 }
 footer img{
    width: 30px;
    margin-left: 10px;
    height: 34px;
 }
+#reseau{
+    margin-top:25px;
+}
+label {
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+
+  button {
+    width: 100%;
+    background:var(--coleur_carte_survole);
+    color: var(--couleur_pricipale_blanc);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  button:hover {
+    background: var(--couleur_pricipale_bleu);
+  }
+
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////En savoir plus ///////////////////////////////////////////////////////////////////////////*/
 

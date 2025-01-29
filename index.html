@@ -6,11 +6,12 @@
         <link href="./Css/style.css" rel="stylesheet">
     </head>
     <header class="centrer">
-        <h1>AZITS</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Accueil </a></li>
-                <li><a href="./projet.html">Projets</a></li>
+                <li><a href="#presentation">Accueil </a></li>
+                <li><a href="#Projets">Projets</a></li>
+                <li><a href="#Connaissance">Technologies</a></li>
+                <li><a href="#contact">Concact</a></li>
             </ul>
         </nav>
     </header>
@@ -20,22 +21,155 @@
             <p id="p1">HELLO, JE SUIS ABDOUL-ANZIZ <br> MAIS VOUS POUVEZ M'APPELER AZITS </p>
             <p id="p2">Je suis Etudiant en deuxième année  de Licence Informatique <br> & Mathématique</p>
             <div id="lienPresentation">
-                <a href="#">voir mes projets ></a>
                 <a href="./enSavoirPlus.html">En savoir plus ></a>
 
             </div> 
        </section>
        <section id="Projets" class="centrer">
-        
+            <h1>Mes projets personnels</h1>
+            <div id="carts">
+                <div id="carte">
+                    <div id="bar">
+                        <img src="img/circle-solid (2).svg" height="12" width="12" />
+                        <img src="img/circle-solid (1).svg" height="12" width="12" />
+                        <img src="./img/circle-solid.svg" height="12" width="12" />
+                       
+                      
+                    </div>
+                    <div id="image"></div>
+                    <div id="information">
+                        <h2 id="titre"></h2>
+                    </div>
+                </div>
+                <div id="carte">
+                    <div id="bar">
+                        <img src="img/circle-solid (2).svg" height="12" width="12" />
+                        <img src="img/circle-solid (1).svg" height="12" width="12" />
+                        <img src="./img/circle-solid.svg" height="12" width="12" />
+                       
+                      
+                    </div>
+                    <div id="image"></div>
+                    <div id="information">
+                        <h2 id="titre"></h2>
+                    </div>
+                </div>
+                <div id="carte">
+                    <div id="bar">
+                        <img src="img/circle-solid (2).svg" height="12" width="12" />
+                        <img src="img/circle-solid (1).svg" height="12" width="12" />
+                        <img src="./img/circle-solid.svg" height="12" width="12" />
+                       
+                      
+                    </div>
+                    <div id="image"></div>
+                    <div id="information">
+                        <h2 id="titre"></h2>
+                    </div>
+                </div>
+                <div id="carte">
+                    <div id="bar">
+                        <img src="img/circle-solid (2).svg" height="12" width="12" />
+                        <img src="img/circle-solid (1).svg" height="12" width="12" />
+                        <img src="./img/circle-solid.svg" height="12" width="12" />
+                       
+                      
+                    </div>
+                    <div id="image"></div>
+                    <div id="information">
+                        <h2 id="titre"></h2>
+                    </div>
+                </div>
+                
+            
+            </div>
        </section>
+       <section id="Connaissance" class="centrer">
+        <h1>Technologies maitrisée</h1>
+        <div id="carts">
+            <div id="carte">
+                <div id="bar">
+                    <img src="img/circle-solid (2).svg" height="12" width="12" />
+                    <img src="img/circle-solid (1).svg" height="12" width="12" />
+                    <img src="./img/circle-solid.svg" height="12" width="12" />
+                   
+                  
+                </div>
+                <div id="image"></div>
+                <div id="information">
+                    <h2 id="titre"></h2>
+                </div>
+            </div>
+            <div id="carte">
+                <div id="bar">
+                    <img src="img/circle-solid (2).svg" height="12" width="12" />
+                    <img src="img/circle-solid (1).svg" height="12" width="12" />
+                    <img src="./img/circle-solid.svg" height="12" width="12" />
+                   
+                  
+                </div>
+                <div id="image"></div>
+                <div id="information">
+                    <h2 id="titre"></h2>
+                </div>
+            </div>
+            <div id="carte">
+                <div id="bar">
+                    <img src="img/circle-solid (2).svg" height="12" width="12" />
+                    <img src="img/circle-solid (1).svg" height="12" width="12" />
+                    <img src="./img/circle-solid.svg" height="12" width="12" />
+                   
+                  
+                </div>
+                <div id="image"></div>
+                <div id="information">
+                    <h2 id="titre"></h2>
+                </div>
+            </div>
+            <div id="carte">
+                <div id="bar">
+                    <img src="img/circle-solid (2).svg" height="12" width="12" />
+                    <img src="img/circle-solid (1).svg" height="12" width="12" />
+                    <img src="./img/circle-solid.svg" height="12" width="12" />
+                   
+                  
+                </div>
+                <div id="image"></div>
+                <div id="information">
+                    <h2 id="titre"></h2>
+                </div>
+            </div>
+            
+        
+        </div>
+        </section>
     </main>
-   <footer class="centrer">
-        <section class="fondu">
+    <footer >
+        <section id="contact">
+            <h2> Contacter moi </h2>
+            <form action="envoyer.php" method="post">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" placeholder="Entrez votre nom/celui de l'entreprise" required>
+                <label for="email">E-mail :</label>
+                <input type="email" id="email" name="email" placeholder="Entrez votre e-mail" required>
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" rows="4" placeholder="Votre message ici..." required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
+            <div id="reseau">
             <img src="./img/gmail-logo.png">
             <img src="./img/github-sign.png">
             
-            <img src="./img/linkedin (2).png">
+            <img src="./img/linkedin (2).png"></div>
+        </section>
+        <section id="i">
+            <p>&copy <span id="year"></span> Cheikh Ali Abdoul-Anziz</p>
+        
             
         </section>
     </footer>
+
+    <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </html>
