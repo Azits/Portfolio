@@ -132,24 +132,25 @@ main #Projets{
     flex-direction: column;
     justify-content: center;
     padding-top: 20px;
-    height: 80vh;
+    height: 100vh;
 }
 #Projets h1{
     color: var(--couleur_pricipale_blanc);
     margin-bottom:70px;
-    width: 100%;
+    width: 95%;
+    font-size: 3em;
     text-align: center;
 }
 #carts{
-    height: 80%;
-    width: 80%;
+    height: 90%;
+    width: 95%;
     display: flex;
     justify-content: center;
     gap: 50px;
 }
-#carte{
-    width: 240px;
-    height: 350px;
+.carte{
+    width: 400px;
+    height: 370px;
     background-color: var(--couleur_pricipale_blanc);
     display: flex;
     flex-direction: column;
@@ -158,21 +159,33 @@ main #Projets{
     padding-top: 5px;
     border-radius: 15px;
 }
-#carte #bar{
+.carte #bar{
     width: 80%;
     display: flex;
     gap: 8px;
 }
-#carte #image {
+.carte #image {
     margin-top: 5px;
     width: 80%;
-    height: 90px;
+    height: 150px;
     border: 1px solid var(--couleur_pricipale_bleu);
 }
-#carte #information{
+.carte #image img{
+    width: 100%;
+    height: 100%;
+}
+.carte #information{
     width: 80%;
     height: 110px;
-    border: 1px solid var(--couleur_pricipale_bleu);
+    text-align: justify;
+}
+.carte {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.carte:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
 }
 
 #Connaissance{
@@ -182,20 +195,22 @@ main #Projets{
     padding-top: 20px;
     height: 80vh;
 }
-#Connaissance #carte{
-    background-color: var(--coleur_carte_survole);
+#Connaissance .carte{
+    background-color:#F9F4F2;
+        
 }
-#Connaissance #carte #image {
+#Connaissance .carte #image {
     border: 1px solid var(--couleur_pricipale_blanc);
 }
-#Connaissance #carte #information{
-    border: 1px solid var(--couleur_pricipale_blanc);
+#Connaissance .carte #information{
+    color: var(--couleur_pricipale_bleu);
 }
 #Connaissance h1{
-    color: var(--couleur_texte);
+    color: var(--couleur_pricipale_bleu);
     margin-bottom:70px;
     width: 100%;
     text-align: center;
+    font-size: 3em;
 }
 #lienPresentation a:hover,#surmoi a:hover{
     text-decoration: underline;
@@ -281,13 +296,21 @@ label {
 
 
 /*//////////////////////////////////////////////////////////////////////////////////////////////////////En savoir plus ///////////////////////////////////////////////////////////////////////////*/
-
+.separator {
+    width: 100%;
+    height: 50px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,0));
+    margin: 50px 0;
+}
 #enSavoirPlus{
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100vh;
+    margin-top: 50px;
+    padding-bottom: 50px;
 }
-#APropos, #enSavoirPlus aside{
-    animation: apparitionDeHautEnBas 1s ease-in-out;
-}
+
 #APropos{
     
     width: 60%;
@@ -308,7 +331,6 @@ label {
     font-size: 15px;
     line-height:1.4 ;
     color: #1D1D1F;
-
     
 }
 #surmoi{
@@ -319,15 +341,15 @@ label {
     font-size: 20px;
 }
 #enSavoirPlus aside{
-    padding-top:9% ;
+    padding-top:7% ;
     right: 0;
     top: 85px;
     width: 40%;
 }
 aside img{
     border-bottom-left-radius: 30px;
-    width: 100%;
-    height: 100%;
+    width: 70%;
+    height: 80%;
     border-left: 10px solid transparent;
     border-image: linear-gradient(to right, #F5F5F7, #1D1D1F); 
     border-image-slice: 20;
@@ -442,7 +464,6 @@ aside img{
 .categorie{
     font-size: 20px;
 }
-
 
 
 
