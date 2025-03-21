@@ -124,9 +124,18 @@ function ajouterTechnologies() {
 }
 function afficherTout() {
     if (window.innerWidth < 768) { 
-        alert("⚠️ Attention : Ce site n'est pas encore optimisé pour les téléphones. Une version responsive arrivera bientôt !");
+        alert("⚠️ Attention : Ce site n'est pas encore optimisé pour les tailles d'exrans téléphones. Une version responsive arrivera bientôt !");
     }
     ajouterProjet();
     ajouterTechnologies();
 }
 document.addEventListener("DOMContentLoaded", afficherTout);
+
+document.addEventListener("DOMContentLoaded", () => {
+    const toggle = document.getElementById("menu-toggle");
+    const nav = document.querySelector("nav");
+
+    toggle.addEventListener("click", () => {
+        nav.classList.toggle("open");
+    });
+});
