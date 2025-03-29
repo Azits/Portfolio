@@ -1,0 +1,39 @@
+
+:root {
+    --couleur_pricipale_blanc: #F9F4F2;
+    --couleur_pricipale_bleu: #2f1664;
+    --couleur_texte: #2F1664;
+    --coleur_carte_survole: #6942BB;
+}
+
+#presentation {
+    display: flex;
+    align-items: center;
+    
+}
+#presentation h1 {
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+#p2 {
+    font-size: 1em;
+    color: black;
+    margin-top: 10px;
+}
+#photo{
+    width: 400px;
+    height: 500px;
+    border-bottom-left-radius: 30px;
+}
+#Projets h1{
+    font-size: 1.8em;
+}
+
+#image img{
+    height: 250px;
+}
+.tech{
+    height: 10px;
+    width: 150px;
+}

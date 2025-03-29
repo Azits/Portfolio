@@ -60,13 +60,13 @@ function ajouterProjet() {
     data.forEach((projet) => {
         
         const carte = document.createElement('div');
-        carte.classList.add('carte');
+        carte.classList.add('col-4');
 
        
         const bar = document.createElement('div');
         bar.id = "bar";
         bar.innerHTML = `
-            <img src="img/circle-solid (2).svg" height="12" width="12">
+            <img src="img/circle-solid (2).svg" height="12" width="12" ">
             <img src="img/circle-solid (1).svg" height="12" width="12">
             <img src="img/circle-solid.svg" height="12" width="12">
         `;
@@ -74,13 +74,13 @@ function ajouterProjet() {
     
         const divImage = document.createElement('div');
         divImage.id = "image";
-        divImage.innerHTML = `<img src="${projet.Image}" alt="${projet.nom}">`;
+        divImage.innerHTML = `<img src="${projet.Image}" alt="${projet.nom}" class="w-100" >`;
 
         
         const divInformation = document.createElement('div');
         divInformation.id = "information";
         divInformation.innerHTML = `
-            <h2>${projet.nom}</h2>
+            <h2 class="w-100 text-center">${projet.nom}</h2>
             <p>${projet.description}</p>
         `;
 
@@ -95,20 +95,15 @@ function ajouterProjet() {
 function ajouterTechnologies() {
     const carts = document.querySelector("#Connaissance #carts");
 
-    if (!carts) {
-        console.error("Erreur: L'élément #carts n'existe pas dans le DOM.");
-        return;
-    }
-
     technologie.forEach((tech) => {
 
         const carte = document.createElement("div");
-        carte.classList.add("carte");
+        carte.classList.add("col-2");
 
     
         const divImage = document.createElement("div");
         divImage.id = "image";
-        divImage.innerHTML = `<img src="${tech.Image}" alt="${tech.nom}">`;
+        divImage.innerHTML = `<img src="${tech.Image}" alt="${tech.nom}" class="tech" >`;
 
     
         const divInformation = document.createElement("div");
