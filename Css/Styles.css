@@ -1,39 +1,88 @@
 
-:root {
-    --couleur_pricipale_blanc: #F9F4F2;
-    --couleur_pricipale_bleu: #2f1664;
-    --couleur_texte: #2F1664;
-    --coleur_carte_survole: #6942BB;
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+main {
+    padding-top: 90px;
 }
 
-#presentation {
+.btn-primary {
+    background-color: #6942BB;
+    border-color: #2f1664;
+}
+.btn-primary:hover {
+    background-color: #16205c;
+    border-color: #16205c;
+}
+  
+
+.bg-light {
+    background-color: #F9F4F2 !important;
+  }
+.bg-dark {
+    background-color: #2f1664 !important;
+}
+  
+.text-light {
+    color: #F9F4F2;
+}
+  
+h1, h2, h3 {
+    color: #1e2a78;
+}
+  
+
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
     display: flex;
-    align-items: center;
-    
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
 }
-#presentation h1 {
-    font-size: 1.5em;
-    font-weight: 600;
+  
+.card .btn {
+    align-self: center;
+    margin-top: auto;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s;
 }
+.card .btn:hover {
+    background-color: #6942BB;
+    color: #F9F4F2;
+    transform: scale(1.05);
+}
+  
 
-#p2 {
-    font-size: 1em;
-    color: black;
-    margin-top: 10px;
+.card-img-top {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    max-height: 200px;
+    object-fit: cover;
 }
-#photo{
-    width: 400px;
-    height: 500px;
-    border-bottom-left-radius: 30px;
+.nav-link {
+    position: relative;
+    text-decoration: none;
 }
-#Projets h1{
-    font-size: 1.8em;
+  
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
 }
-
-#image img{
-    height: 250px;
-}
-.tech{
-    height: 10px;
-    width: 150px;
+  
+.nav-link:hover::after {
+    width: 100%;
 }
