@@ -1,0 +1,88 @@
+
+body{
+    font-family: Helvetica, Arial, sans-serif;
+}
+main {
+    padding-top: 90px;
+}
+
+.btn-primary {
+    background-color: #6942BB;
+    border-color: #2f1664;
+}
+.btn-primary:hover {
+    background-color: #16205c;
+    border-color: #16205c;
+}
+  
+
+.bg-light {
+    background-color: #F9F4F2 !important;
+  }
+.bg-dark {
+    background-color: #2f1664 !important;
+}
+  
+.text-light {
+    color: #F9F4F2;
+}
+  
+h1, h2, h3 {
+    color: #1e2a78;
+}
+  
+
+.hover-scale {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.hover-scale:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+  
+.card .btn {
+    align-self: center;
+    margin-top: auto;
+    font-weight: 500;
+    border-radius: 30px;
+    transition: background-color 0.3s, transform 0.2s;
+}
+.card .btn:hover {
+    background-color: #6942BB;
+    color: #F9F4F2;
+    transform: scale(1.05);
+}
+  
+
+.card-img-top {
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    max-height: 200px;
+    object-fit: cover;
+}
+.nav-link {
+    position: relative;
+    text-decoration: none;
+}
+  
+.nav-link::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    left: 0;
+    bottom: 0;
+    transition: width 0.3s ease-in-out;
+}
+  
+.nav-link:hover::after {
+    width: 100%;
+}
