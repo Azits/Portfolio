@@ -63,9 +63,7 @@ h1, h2, h3 {
   
 
 .card-img-top {
-    border-top-left-radius: 0.75rem;
-    border-top-right-radius: 0.75rem;
-    max-height: 200px;
+    max-height: 250px;
     object-fit: cover;
 }
 .nav-link {
