@@ -33,12 +33,11 @@ const data = [
     {nom: "Python", Image: "./img/Python--Streamline-Font-Awesome.svg" },
     {nom: "SQL", Image: "./img/Sql--Streamline-Carbon.svg" },
     { nom: "C++", Image: "./img/cplusplus.svg"},
-    { nom: "SFML", Image: "./img/sfml.svg" },
-    { nom: "Git", Image: "./img/github.svg" },
-    { nom: "Figma pour le prototypage", Image: "./img/figma.svg" },
     { nom: "Java", Image: "./img/Java--Streamline-Font-Awesome.svg" },
     { nom: "HTML", Image: "./img/html5.svg" },
     { nom: "CSS", Image: "./img/css.svg" },
-    { nom: "JavaScript", Image: "./img/javascript.svg" }
-    
+    { nom: "JavaScript", Image: "./img/javascript.svg" },
+    { nom: "Git", Image: "./img/github.svg" },
+    { nom: "Figma pour le prototypage", Image: "./img/figma.svg" },
+
   ];
